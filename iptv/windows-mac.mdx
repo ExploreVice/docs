@@ -1,0 +1,312 @@
+---
+title: 'Windows & Mac Setup'
+description: 'IPTV installation guide for Windows and Mac desktop computers'
+icon: 'desktop'
+---
+
+# IPTV Setup for Windows & Mac
+
+This guide covers IPTV installation for **Windows PCs and Mac computers** using various IPTV applications.
+
+## Supported Operating Systems
+
+<CardGroup cols={2}>
+  <Card title="Windows" icon="windows">
+    Windows 10/11 (64-bit recommended)
+  </Card>
+  <Card title="macOS" icon="apple">
+    macOS 10.15 Catalina or later
+  </Card>
+</CardGroup>
+
+## Before You Begin
+
+### System Requirements
+
+- **Windows**: Windows 10 or later (64-bit)
+- **Mac**: macOS 10.15 or later
+- **RAM**: Minimum 4GB (8GB recommended)
+- **Internet**: Stable broadband connection (minimum 10 Mbps)
+- **Storage**: At least 100MB free space
+
+## Installation Options
+
+### Option 1: IPTV Smarters Pro (Recommended)
+
+#### For Windows
+
+<Steps>
+  <Step title="Download IPTV Smarters Pro">
+    1. Visit the official IPTV Smarters website
+    2. Download the Windows version
+    3. Save the installer to your Downloads folder
+  </Step>
+  
+  <Step title="Install the Application">
+    1. Run the downloaded installer
+    2. Follow the installation wizard
+    3. Launch IPTV Smarters Pro
+  </Step>
+  
+  <Step title="Configure Your Account">
+    1. Click **Add New User**
+    2. Select **Login with Xtream Codes API**
+    3. Enter your IPTV credentials:
+       - **Name**: Choose a display name
+       - **Username**: Your IPTV username
+       - **Password**: Your IPTV password
+       - **URL**: Your IPTV server URL
+  </Step>
+</Steps>
+
+#### For Mac
+
+<Steps>
+  <Step title="Download for macOS">
+    1. Visit the IPTV Smarters website
+    2. Download the macOS version
+    3. Save the .dmg file to your Downloads
+  </Step>
+  
+  <Step title="Install the Application">
+    1. Double-click the .dmg file
+    2. Drag IPTV Smarters Pro to Applications folder
+    3. Launch from Applications or Launchpad
+  </Step>
+  
+  <Step title="Configure Your Account">
+    Follow the same configuration steps as Windows
+  </Step>
+</Steps>
+
+### Option 2: VLC Media Player
+
+VLC is a free, open-source alternative that supports IPTV playlists.
+
+<Steps>
+  <Step title="Download VLC">
+    1. Visit videolan.org
+    2. Download VLC for your operating system
+    3. Install VLC following the standard process
+  </Step>
+  
+  <Step title="Add IPTV Playlist">
+    1. Open VLC Media Player
+    2. Go to **Media** → **Open Network Stream**
+    3. Enter your M3U playlist URL
+    4. Click **Play** to load channels
+  </Step>
+  
+  <Step title="Save Playlist">
+    1. Go to **Media** → **Save Playlist**
+    2. Save as M3U format for easy access
+  </Step>
+</Steps>
+
+### Option 3: Kodi Media Center
+
+Kodi is a powerful media center with IPTV support through add-ons.
+
+<Steps>
+  <Step title="Download and Install Kodi">
+    1. Visit kodi.tv
+    2. Download Kodi for your platform
+    3. Install following standard procedure
+  </Step>
+  
+  <Step title="Install IPTV Add-on">
+    1. Open Kodi
+    2. Go to **Add-ons** → **Download**
+    3. Install "PVR IPTV Simple Client"
+    4. Enable the add-on
+  </Step>
+  
+  <Step title="Configure IPTV">
+    1. Go to add-on settings
+    2. Enter your M3U playlist URL
+    3. Configure EPG URL if available
+    4. Restart Kodi to load channels
+  </Step>
+</Steps>
+
+## Advanced Configuration
+
+### M3U Playlist Setup
+
+<Accordion title="Using M3U Playlists">
+Most IPTV applications support M3U playlists:
+
+1. **Get your M3U URL** from your IPTV provider
+2. **Copy the URL** to your clipboard
+3. **Add to your chosen app**:
+   - IPTV Smarters Pro: Add New User → Load Playlist
+   - VLC: Media → Open Network Stream
+   - Kodi: PVR IPTV Simple Client settings
+
+**Example M3U URL format:**
+```
+http://your-provider.com/get.php?username=your_user&password=your_pass&type=m3u
+```
+</Accordion>
+
+### EPG (Electronic Program Guide) Setup
+
+<Accordion title="Setting up EPG">
+Enhanced program guide with show information:
+
+1. **Get EPG URL** from your IPTV provider
+2. **Add to your application**:
+   - IPTV Smarters Pro: Add in user configuration
+   - Kodi: PVR IPTV Simple Client → EPG Settings
+
+**Example EPG URL format:**
+```
+http://your-provider.com/xmltv.php?username=your_user&password=your_pass
+```
+</Accordion>
+
+## Application Comparison
+
+<CardGroup cols={3}>
+  <Card title="IPTV Smarters Pro" icon="star">
+    **Pros:**
+    - Dedicated IPTV app
+    - User-friendly interface
+    - VOD support
+    - EPG integration
+    
+    **Cons:**
+    - May require purchase
+    - Limited customization
+  </Card>
+  
+  <Card title="VLC Media Player" icon="play">
+    **Pros:**
+    - Free and open-source
+    - Supports many formats
+    - Lightweight
+    - Cross-platform
+    
+    **Cons:**
+    - Basic IPTV features
+    - No EPG support
+    - Limited interface
+  </Card>
+  
+  <Card title="Kodi" icon="cube">
+    **Pros:**
+    - Highly customizable
+    - Extensive add-ons
+    - Full media center
+    - EPG support
+    
+    **Cons:**
+    - Complex setup
+    - Resource intensive
+    - Learning curve
+  </Card>
+</CardGroup>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Installation Issues">
+    **Windows:**
+    - Run installer as administrator
+    - Disable antivirus temporarily
+    - Check Windows version compatibility
+    
+    **Mac:**
+    - Allow installation from unidentified developers
+    - Check macOS version compatibility
+    - Grant necessary permissions
+  </Accordion>
+  
+  <Accordion title="Playback Issues">
+    - **Buffering**: Check internet speed and close bandwidth-heavy applications
+    - **No video**: Update graphics drivers and codecs
+    - **Audio problems**: Check audio settings and codecs
+    - **Crashes**: Update the application and operating system
+  </Accordion>
+  
+  <Accordion title="Connection Problems">
+    - Verify IPTV credentials are correct
+    - Check firewall settings
+    - Test with different servers
+    - Contact IPTV provider for server status
+  </Accordion>
+</AccordionGroup>
+
+## Performance Optimization
+
+### For Windows
+
+<Steps>
+  <Step title="Hardware Acceleration">
+    - Enable hardware acceleration in app settings
+    - Update graphics drivers
+    - Use dedicated graphics card if available
+  </Step>
+  
+  <Step title="Network Optimization">
+    - Close bandwidth-heavy applications
+    - Use wired connection when possible
+    - Configure QoS settings on router
+  </Step>
+  
+  <Step title="System Optimization">
+    - Close unnecessary background programs
+    - Increase virtual memory if needed
+    - Keep system updated
+  </Step>
+</Steps>
+
+### For Mac
+
+<Steps>
+  <Step title="System Preferences">
+    - Enable hardware acceleration
+    - Adjust energy saver settings
+    - Keep macOS updated
+  </Step>
+  
+  <Step title="Network Settings">
+    - Use ethernet connection
+    - Optimize Wi-Fi settings
+    - Check for interference
+  </Step>
+</Steps>
+
+## Keyboard Shortcuts
+
+### Common Shortcuts
+
+<Info>
+**Useful Keyboard Shortcuts:**
+- **Spacebar**: Play/Pause
+- **F**: Toggle fullscreen
+- **↑/↓**: Volume up/down
+- **←/→**: Seek backward/forward
+- **Esc**: Exit fullscreen
+- **M**: Mute/unmute
+</Info>
+
+## Features Available
+
+- **Live TV** with 25,000+ channels
+- **Video on Demand** library with 14,000+ titles
+- **Electronic Program Guide (EPG)**
+- **Multi-language support**
+- **Recording capabilities** (app-dependent)
+- **Multiple viewing modes**
+- **Playlist management**
+
+## Need Help?
+
+<Card title="Contact Support" icon="headset">
+  For technical issues specific to your computer setup or help choosing the best IPTV application for your needs, contact our support team. We can provide personalized recommendations based on your system specifications.
+</Card>
+
+<Tip>
+**Performance Tip**: For the best IPTV experience on desktop, we recommend using a dedicated IPTV application like IPTV Smarters Pro rather than generic media players. This ensures optimal compatibility and feature support.
+</Tip> 

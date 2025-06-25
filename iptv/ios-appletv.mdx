@@ -1,0 +1,345 @@
+---
+title: 'iOS & Apple TV Setup'
+description: 'IPTV installation guide for iPhone, iPad, and Apple TV devices'
+icon: 'apple'
+---
+
+# IPTV Setup for iOS & Apple TV
+
+This guide covers IPTV installation for **iPhone, iPad, and Apple TV** devices running iOS and tvOS.
+
+## Supported Apple Devices
+
+<CardGroup cols={3}>
+  <Card title="iPhone" icon="mobile">
+    iPhone 6s and later with iOS 12+
+  </Card>
+  <Card title="iPad" icon="tablet">
+    iPad Air 2 and later with iOS 12+
+  </Card>
+  <Card title="Apple TV" icon="tv">
+    Apple TV 4th gen and later with tvOS 12+
+  </Card>
+</CardGroup>
+
+## Before You Begin
+
+### System Requirements
+
+- **iOS**: iOS 12.0 or later
+- **tvOS**: tvOS 12.0 or later
+- **Internet**: Stable Wi-Fi connection (minimum 10 Mbps)
+- **Apple ID**: Required for App Store access
+
+<Warning>
+**Important**: Due to Apple's App Store policies, dedicated IPTV apps may have limited availability. Alternative methods may require additional steps.
+</Warning>
+
+## Installation Methods
+
+### Method 1: App Store Applications
+
+#### IPTV Apps Available on App Store
+
+<Steps>
+  <Step title="Search App Store">
+    Look for these IPTV-compatible apps:
+    - **GSE Smart IPTV** (Recommended)
+    - **IPTV Player**
+    - **VLC for Mobile**
+    - **Infuse 7**
+  </Step>
+  
+  <Step title="Download and Install">
+    1. Tap **Get** to download the app
+    2. Authenticate with Face ID, Touch ID, or passcode
+    3. Wait for installation to complete
+  </Step>
+  
+  <Step title="Launch and Configure">
+    Open the installed app and follow the setup process
+  </Step>
+</Steps>
+
+#### GSE Smart IPTV Setup (Recommended)
+
+<Steps>
+  <Step title="Download GSE Smart IPTV">
+    Install GSE Smart IPTV from the App Store
+  </Step>
+  
+  <Step title="Add Playlist">
+    1. Open GSE Smart IPTV
+    2. Tap the **+** button to add a new playlist
+    3. Select **M3U URL** or **Xtream Codes**
+  </Step>
+  
+  <Step title="Configure Settings">
+    **For M3U URL:**
+    - **Name**: Choose a playlist name
+    - **URL**: Enter your M3U playlist URL
+    - **EPG URL**: (Optional) Enter EPG URL
+    
+    **For Xtream Codes:**
+    - **Name**: Choose a display name
+    - **Server**: Your IPTV server URL
+    - **Username**: Your IPTV username
+    - **Password**: Your IPTV password
+  </Step>
+  
+  <Step title="Save and Load">
+    1. Tap **Save** to add the playlist
+    2. Wait for channels to load
+    3. Start watching your content
+  </Step>
+</Steps>
+
+### Method 2: VLC for Mobile
+
+<Steps>
+  <Step title="Install VLC">
+    Download VLC for Mobile from the App Store
+  </Step>
+  
+  <Step title="Add Network Stream">
+    1. Open VLC
+    2. Tap **Network** tab
+    3. Tap **+** to add a new stream
+  </Step>
+  
+  <Step title="Enter M3U URL">
+    1. Enter your M3U playlist URL
+    2. Tap **Save**
+    3. Tap the saved stream to start playing
+  </Step>
+</Steps>
+
+## Apple TV Specific Setup
+
+### Using Apple TV Apps
+
+<Steps>
+  <Step title="Access App Store">
+    Open the App Store on your Apple TV
+  </Step>
+  
+  <Step title="Search for IPTV Apps">
+    Search for compatible apps:
+    - **GSE Smart IPTV**
+    - **VLC**
+    - **Infuse 7**
+  </Step>
+  
+  <Step title="Install and Configure">
+    1. Download and install your chosen app
+    2. Configure with your IPTV credentials
+    3. Use the Apple TV remote to navigate
+  </Step>
+</Steps>
+
+### Apple TV Remote Navigation
+
+<Tip>
+**Apple TV Remote Tips:**
+- **Touch surface**: Swipe to navigate
+- **Click**: Select items
+- **Menu button**: Go back
+- **TV/Home button**: Return to home screen
+- **Siri button**: Voice search and commands
+</Tip>
+
+## Alternative Methods
+
+### AirPlay from iOS Device
+
+<Steps>
+  <Step title="Setup IPTV on iPhone/iPad">
+    Configure IPTV on your iPhone or iPad using GSE Smart IPTV
+  </Step>
+  
+  <Step title="Connect to Apple TV">
+    Ensure your iOS device and Apple TV are on the same Wi-Fi network
+  </Step>
+  
+  <Step title="Use AirPlay">
+    1. Start playing content on your iOS device
+    2. Tap the **AirPlay** button
+    3. Select your Apple TV
+    4. Content will stream to your TV
+  </Step>
+</Steps>
+
+### Web Browser Method (iPad)
+
+<Steps>
+  <Step title="Use Safari Browser">
+    Some IPTV providers offer web-based players
+  </Step>
+  
+  <Step title="Access Web Player">
+    1. Open Safari on your iPad
+    2. Navigate to your IPTV provider's web player
+    3. Login with your credentials
+    4. Start streaming directly in the browser
+  </Step>
+</Steps>
+
+## Configuration Examples
+
+### M3U Playlist Configuration
+
+<Accordion title="M3U Setup Example">
+**Example M3U URL format:**
+```
+http://your-provider.com/get.php?username=your_user&password=your_pass&type=m3u_plus
+```
+
+**In GSE Smart IPTV:**
+1. Select "M3U URL" when adding playlist
+2. Enter the complete URL
+3. Optionally add EPG URL for program guide
+4. Save and let the app load channels
+</Accordion>
+
+### Xtream Codes Configuration
+
+<Accordion title="Xtream Codes Setup Example">
+**Required Information:**
+- **Server URL**: `http://your-provider.com:port`
+- **Username**: Your account username
+- **Password**: Your account password
+
+**In GSE Smart IPTV:**
+1. Select "Xtream Codes" when adding playlist
+2. Enter server URL (without username/password in URL)
+3. Enter username and password separately
+4. Save configuration
+</Accordion>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="App Not Available in App Store">
+    **Solutions:**
+    - Try alternative apps like VLC or Infuse 7
+    - Use web browser method on iPad
+    - Consider AirPlay from another device
+    - Check if your region restricts certain apps
+  </Accordion>
+  
+  <Accordion title="Playback Issues">
+    **Common fixes:**
+    - Check internet connection speed
+    - Restart the app and device
+    - Verify IPTV credentials
+    - Try different server/quality settings
+    - Clear app cache if available
+  </Accordion>
+  
+  <Accordion title="Apple TV Connection Issues">
+    **Troubleshooting:**
+    - Ensure Apple TV and iOS device are on same network
+    - Restart both devices
+    - Check AirPlay settings
+    - Update to latest iOS/tvOS versions
+  </Accordion>
+  
+  <Accordion title="Buffering Problems">
+    **Solutions:**
+    - Check Wi-Fi signal strength
+    - Close other bandwidth-heavy apps
+    - Lower video quality in app settings
+    - Restart your router
+    - Try different server if available
+  </Accordion>
+</AccordionGroup>
+
+## Performance Optimization
+
+### iOS Devices (iPhone/iPad)
+
+<Steps>
+  <Step title="Optimize Device Performance">
+    - Close unnecessary background apps
+    - Ensure sufficient storage space
+    - Keep iOS updated to latest version
+    - Restart device regularly
+  </Step>
+  
+  <Step title="Network Optimization">
+    - Use 5GHz Wi-Fi when available
+    - Position device close to router
+    - Avoid network congestion times
+  </Step>
+</Steps>
+
+### Apple TV
+
+<Steps>
+  <Step title="Apple TV Optimization">
+    - Keep tvOS updated
+    - Restart Apple TV regularly
+    - Check available storage
+    - Use ethernet connection when possible
+  </Step>
+  
+  <Step title="Display Settings">
+    - Adjust video resolution if needed
+    - Enable/disable HDR based on content
+    - Optimize for your TV's capabilities
+  </Step>
+</Steps>
+
+## App Comparison
+
+<CardGroup cols={3}>
+  <Card title="GSE Smart IPTV" icon="star">
+    **Pros:**
+    - Dedicated IPTV features
+    - M3U and Xtream support
+    - EPG integration
+    - User-friendly interface
+    
+    **Best for:** Primary IPTV viewing
+  </Card>
+  
+  <Card title="VLC for Mobile" icon="play">
+    **Pros:**
+    - Free and reliable
+    - Wide format support
+    - No ads
+    - Open source
+    
+    **Best for:** Simple streaming needs
+  </Card>
+  
+  <Card title="Infuse 7" icon="film">
+    **Pros:**
+    - Beautiful interface
+    - Great video quality
+    - Metadata fetching
+    - Multiple sources
+    
+    **Best for:** Premium experience
+  </Card>
+</CardGroup>
+
+## Features Available
+
+- **Live TV** with 25,000+ channels
+- **Video on Demand** library
+- **Electronic Program Guide (EPG)**
+- **Multi-language support**
+- **AirPlay compatibility**
+- **Picture-in-Picture** (iPad)
+- **Offline viewing** (app-dependent)
+
+## Need Help?
+
+<Card title="Contact Support" icon="headset">
+  If you need assistance with iOS/Apple TV setup or encounter compatibility issues, contact our support team. We can provide device-specific guidance and help you choose the best app for your needs.
+</Card>
+
+<Info>
+**Compatibility Note**: Due to Apple's App Store policies, the availability of IPTV apps may vary by region and time. We recommend GSE Smart IPTV as the most reliable option currently available.
+</Info> 

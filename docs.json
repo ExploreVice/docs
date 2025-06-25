@@ -42,6 +42,17 @@
               "others/23h2",
               "others/security"
             ]
+          },
+          {
+            "group": "IPTV (All Devices)",
+            "pages": [
+              "iptv/overview",
+              "iptv/smart-tv",
+              "iptv/android",
+              "iptv/firestick",
+              "iptv/windows-mac",
+              "iptv/ios-appletv"
+            ]
           }
         ],
     "global": {
